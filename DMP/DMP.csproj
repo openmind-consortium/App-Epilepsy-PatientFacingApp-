@@ -1,0 +1,335 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\MSTest.TestAdapter.1.3.2\build\net45\MSTest.TestAdapter.props" Condition="Exists('..\packages\MSTest.TestAdapter.1.3.2\build\net45\MSTest.TestAdapter.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{69916D24-3B31-4AB6-93B1-8BA20995AF3F}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>DMP</RootNamespace>
+    <AssemblyName>DMP</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>Mayo Epilepsy Personal Assistant Device</ProductName>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.1.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;CODE_ANALYSIS;CODE_ANALYSIS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <IntermediateOutputPath>C:\Users\m161121\AppData\Local\Temp\vs7ED8.tmp\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <IntermediateOutputPath>C:\Users\m161121\AppData\Local\Temp\vs7ED8.tmp\Release\</IntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>BA2D283B70AE4FADD22CBF83720E341DC2BF88D6</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>EPAD_T_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>mayo_clinic_logo_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CircularProgressBar, Version=2.5.6403.13419, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CircularProgressBar.2.5.6403.13419\lib\net35-client\CircularProgressBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Medtronic.NeuroStim.Olympus, Version=0.1.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\Medtronic.NeuroStim.Olympus.dll</HintPath>
+    </Reference>
+    <Reference Include="Medtronic.SummitAPI, Version=0.6.4.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\Medtronic.SummitAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="Medtronic.TelemetryM, Version=1.2.12.0, Culture=neutral, PublicKeyToken=535626dfb84bc5ea, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\Medtronic.TelemetryM.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="WinFormAnimation, Version=1.5.6298.3372, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WinFormAnimation.1.5.6298.3372\lib\net35-client\WinFormAnimation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addMed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addMed.Designer.cs">
+      <DependentUpon>addMed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigureLDAForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigureLDAForm.Designer.cs">
+      <DependentUpon>ConfigureLDAForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsoleFileOutput .cs" />
+    <Compile Include="CustomMsgBox .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomMsgBox .Designer.cs">
+      <DependentUpon>CustomMsgBox .cs</DependentUpon>
+    </Compile>
+    <Compile Include="DMP_Main_MDIParent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMP_Main_MDIParent.Designer.cs">
+      <DependentUpon>DMP_Main_MDIParent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EventGenerator.cs" />
+    <Compile Include="GlobalVariablesForImpedanceTest.cs" />
+    <Compile Include="InactiveTimeRetriever.cs" />
+    <Compile Include="programControlForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="programControlForm.designer.cs">
+      <DependentUpon>programControlForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="discoveryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="discoveryForm.Designer.cs">
+      <DependentUpon>discoveryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="notesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="notesForm.Designer.cs">
+      <DependentUpon>notesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient.Designer.cs">
+      <DependentUpon>Patient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Physician.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Physician.Designer.cs">
+      <DependentUpon>Physician.cs</DependentUpon>
+    </Compile>
+    <Compile Include="displayStatPhysicianForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="displayStatPhysicianForm.Designer.cs">
+      <DependentUpon>displayStatPhysicianForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="checkImpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="checkImpForm.Designer.cs">
+      <DependentUpon>checkImpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Read.cs" />
+    <Compile Include="SafeStatusStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SafeToolStripLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StimTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StimTest.Designer.cs">
+      <DependentUpon>StimTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StimulationParamForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StimulationParamForm.Designer.cs">
+      <DependentUpon>StimulationParamForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetSensingParamForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetSensingParamForm.Designer.cs">
+      <DependentUpon>SetSensingParamForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Startup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Startup.Designer.cs">
+      <DependentUpon>Startup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TabPageNForm.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="addMed.resx">
+      <DependentUpon>addMed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigureLDAForm.resx">
+      <DependentUpon>ConfigureLDAForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomMsgBox .resx">
+      <DependentUpon>CustomMsgBox .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DMP_Main_MDIParent.resx">
+      <DependentUpon>DMP_Main_MDIParent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="discoveryForm.resx">
+      <DependentUpon>discoveryForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient.resx">
+      <DependentUpon>Patient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Physician.resx">
+      <DependentUpon>Physician.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="displayStatPhysicianForm.resx">
+      <DependentUpon>displayStatPhysicianForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="notesForm.resx">
+      <DependentUpon>notesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="checkImpForm.resx">
+      <DependentUpon>checkImpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="programControlForm.resx">
+      <DependentUpon>programControlForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StimTest.resx">
+      <DependentUpon>StimTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StimulationParamForm.resx">
+      <DependentUpon>StimulationParamForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetSensingParamForm.resx">
+      <DependentUpon>SetSensingParamForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Startup.resx">
+      <DependentUpon>Startup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Scripts\jquery-2.1.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Mayo-clinic-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="License-LGPL.txt" />
+    <Content Include="mayo_clinic_logo_icon.ico" />
+    <Content Include="Scripts\jquery-2.1.1.intellisense.js" />
+    <Content Include="Scripts\jquery-2.1.1.js" />
+    <Content Include="Scripts\jquery-2.1.1.min.js" />
+    <Content Include="Scripts\nugetexample.js" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\MSTest.TestAdapter.1.3.2\build\net45\MSTest.TestAdapter.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MSTest.TestAdapter.1.3.2\build\net45\MSTest.TestAdapter.props'))" />
+    <Error Condition="!Exists('..\packages\MSTest.TestAdapter.1.3.2\build\net45\MSTest.TestAdapter.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MSTest.TestAdapter.1.3.2\build\net45\MSTest.TestAdapter.targets'))" />
+  </Target>
+  <Import Project="..\packages\MSTest.TestAdapter.1.3.2\build\net45\MSTest.TestAdapter.targets" Condition="Exists('..\packages\MSTest.TestAdapter.1.3.2\build\net45\MSTest.TestAdapter.targets')" />
+</Project>
