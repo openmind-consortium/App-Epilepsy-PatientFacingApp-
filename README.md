@@ -13,3 +13,5 @@ The DMP Application includes algorithms to identify segments of iEEG data with p
 The DMP system selects neurostimulation parameters from a physician-defined and verified safe range. In the Medtronic Summit System, there are 16 stimulation programs available in 4 selectable groups. There are 3 groups (12 programs) available for “remote” web selection, and 1 group (4 programs) set aside for embedded closed-loop operation on the RC+S device. Stimulation programs can be selected from either an external command function or an embedded algorithm function.
 
 The DMP source code and executables are provided freely to all RC+S and Open Mind consortium investigators. The software is provided as is with no warranties or guarantees, and investigators using the code accept full responsibility for the software's use and application.
+
+For more details, follow the Wiki page for these tools: 
