@@ -2,6 +2,8 @@
 Data Management Platform
 The Mayo Data Management Platform (DMP), in conjunction with the Medtronic Summit System, is an investigational neuromodulation system that provides advanced brain sensing and stimulation capabilities.
 
+The DMP System provides a Patient facing application integrated together with Physician operating mode (physician facing application).
+
 The DMP System connects to the Medtronic Summit System, which consists of an RC+S implantable device, commercial leads and extensions, Summit Application Programming Interface, Summit Research Lab Programmer (RLP), Continuous Telemetry Module Gateway (CTM), and Summit Patient Programmer and INS recharger. The DMP system consists of a software application hosted on a standard Microsoft Windows compatible tablet computer. Off-line analysis and management of data is possible via commercially available cloud computing resources.
 
 The DMP Application (running on the tablet computer) will telemeter and store iEEG data from the Olympus RC+S device via the CTM Gateway. The Medtronic Summit Research Development Kit (RDK), a software interface library, is incorporated in the DMP and is used to access gateway functionality. The DMP Application receives iEEG data through an encrypted Bluetooth link with the Medtronic CTM gateway, stores the iEEG data locally on the tablet computer, and copies the iEEG data over standard wireless or cellular data connections to a remote analysis and storage system for physician review.
