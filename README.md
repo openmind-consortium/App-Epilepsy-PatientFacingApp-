@@ -14,4 +14,5 @@ The DMP system selects neurostimulation parameters from a physician-defined and 
 
 The DMP source code and executables are provided freely to all RC+S and Open Mind consortium investigators. The software is provided as is with no warranties or guarantees, and investigators using the code accept full responsibility for the software's use and application.
 
-## For more details, follow the Wiki page for these tools: https://github.com/openmind-consortium/Mayo-Data-Management-Platform/wiki
+## For more details, follow the Wiki page for these tools: 
+### https://github.com/openmind-consortium/Mayo-Data-Management-Platform/wiki
