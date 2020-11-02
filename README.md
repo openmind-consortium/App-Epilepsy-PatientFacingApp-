@@ -1,4 +1,4 @@
-# DMP
+# Mayo Data Management Platform and Analytical Tools
 Data Management Platform
 The Mayo Data Management Platform (DMP), in conjunction with the Medtronic Summit System, is an investigational neuromodulation system that provides advanced brain sensing and stimulation capabilities.
 
