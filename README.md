@@ -1,4 +1,4 @@
-# App-Mayo-ResearchFacingApplication
+# App-Mayo-PatientFacingApplication
 
 Mayo Epilepsy Personal Assistent Device and Mayo Data Management Platform are both Researcher and Patient facing application. 
 
